@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app.js",
-    "dev": "ceoss-env NODE_ENV=development nodemon app.js"
+    "dev": "cross-env NODE_ENV=development nodemon app.js"
   },
   "author": "Sammy Baik",
   "license": "MIT",
@@ -20,5 +20,9 @@
     "mongoose": "^7.0.0",
     "morgan": "^1.10.0",
     "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.21"
   }
 }
